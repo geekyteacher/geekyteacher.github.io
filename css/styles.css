@@ -14,6 +14,7 @@ body {
     min-height: 100vh;
 }
 
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -111,6 +112,11 @@ nav.container {
 main {
     background: rgb(255, 255, 255);
     margin-top: 0;
+}
+
+.about-text p
+{
+    margin-bottom: 1rem;
 }
 
 section {
