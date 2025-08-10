@@ -13,11 +13,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Form submission (you'll need to connect this to your backend)
-document.querySelector('.contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Thanks for your message! I\'ll get back to you soon.');
-    // Here you would normally send the data to your server
-});
+// document.querySelector('.contact-form').addEventListener('submit', function(e) {
+//     e.preventDefault();
+//     alert('Thanks for your message! I\'ll get back to you soon.');
+//     // Here you would normally send the data to your server
+// });
 
 // Add active nav state on scroll
 window.addEventListener('scroll', () => {
