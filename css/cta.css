@@ -24,14 +24,19 @@
 .cta-button {
     background: var(--color-accent, #ea580c);
     color: white;
-    color: white;
-    padding: 15px 30px;
-    border-radius: var(--button-radius, 6px);
+    padding: 0.75em 1.2em;
+    border-radius: 2em;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1em;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     opacity: 0;
     animation: fadeInUp 1s ease 0.9s forwards;
+    max-width: 90vw;
+    box-sizing: border-box;
+    white-space: normal;
+    display: inline-block;
+    margin: 1em auto 0 auto;
 }
 
 .cta-section .cta-button:hover {
