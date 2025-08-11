@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Teaching Approach - geeky-teacher</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Navigation */
+        nav {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+        
+        /* Main Content */
+        main {
+            margin-top: 80px;
+            padding: 2rem 0;
+        }
+        
+        .hero {
+            text-align: center;
+            color: white;
+            margin-bottom: 4rem;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Content Cards */
+        .content-grid {
+            display: grid;
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        
+        .content-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .content-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .content-card h2 {
+            color: #667eea;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+        
+        .content-card h3 {
+            color: #444;
+            font-size: 1.3rem;
+            margin: 1.5rem 0 0.8rem 0;
+        }
+        
+        .content-card p {
+            margin-bottom: 1rem;
+            color: #666;
+        }
+        
+        .content-card ul {
+            margin-left: 1.5rem;
+            color: #666;
+        }
+        
+        .content-card li {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Call to Action */
+        .cta-section {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 3rem;
+            color: white;
+            margin: 2rem 0;
+        }
+        
+        .cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .content-card {
+                padding: 1.5rem;
+            }
+            
+            .cta-section {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">geeky-teacher</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="teaching-philosophy.html">Teaching Approach</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h1>My Teaching Philosophy</h1>
+                <p>My teaching approach is a philosophy built on a simple principle: that everyone is capable of learning. This isn't an idealistic statement—it's the foundation of every session and every interaction I have with a student. My goal is to provide the support and tools to empower individuals to take control of their own educational journey, whatever that may be.</p>
+                <hr style="margin: 2rem 0;">
+            </section>
+            <div class="content-card">
+                <h2>Core Educational Beliefs</h2>
+                <ul>
+                    <li><strong>Learning is Individual:</strong> I recognise that students learn in different ways and at different paces. While the research on learning styles has evolved, it's clear that students have preferred methods of engaging with material. More importantly, certain topics are naturally better suited to specific teaching approaches.</li>
+                    <li><strong>Equitable, Not Just Equal, Education:</strong> It's not enough to treat everyone the same—we must make learning truly equitable. Students don't all start from the same place, and effective teaching acknowledges this reality by providing the specific support each student needs.</li>
+                    <li><strong>Know Your Students:</strong> As an educator, it's essential to understand your students: their current skill level, where they're working towards, and what their ultimate goals are. This understanding allows me to guide them through the necessary steps effectively—and, crucially, this information should be communicated clearly to the student as well.</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h2>How I Teach</h2>
+                <p>My methodology focuses on creating independent learners within a supportive, practical learning environment.</p>
+                <ul>
+                    <li><strong>Student Ownership of Learning:</strong> I believe in giving students ownership of their learning journey. This involves guiding them through processes so they can become better learners who understand how to find and use resources effectively. When students take control of their learning, they develop skills that extend far beyond any single subject.</li>
+                    <li><strong>Varied Instruction Methods:</strong> Teaching and learning should take many forms. While some direct instruction is necessary, I encourage students to participate in discussions and collaborative learning. I'm not a fan of silent classrooms—they hinder the peer-to-peer learning and communication that are crucial in subjects like computer science.</li>
+                    <li><strong>Practical Application Focus:</strong> Learning is more than just remembering facts; it's about being able to use information and skills effectively. For computer science, this means:
+                        <ul>
+                            <li>Hands-on work with both software and hardware.</li>
+                            <li>Building actual projects and solutions.</li>
+                            <li>Writing programmes consistently, not just studying theory.</li>
+                            <li>Solving real-world problems.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Safe and Supportive Environment:</strong> Every learning space should be safe for students to voice opinions, ask questions, and make mistakes. I'm not afraid to say "I don't know" and then work with students to find the answers together. This approach models a growth mindset and encourages students to take initiative in their own learning.</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h2>What This Means for You</h2>
+                <p>These principles translate into a learning experience that's different from traditional tutoring approaches.</p>
+                <ul>
+                    <li><strong>For Students:</strong>
+                        <ul>
+                            <li>You'll develop independent learning skills that serve you beyond our sessions.</li>
+                            <li>We'll work on real projects that build your portfolio and confidence.</li>
+                            <li>You'll understand not just what to do, but why and how to figure it out yourself.</li>
+                            <li>Mistakes become learning opportunities, not failures.</li>
+                        </ul>
+                    </li>
+                    <li><strong>For Parents:</strong>
+                        <ul>
+                            <li>You'll see progress in your child's confidence and independence, not just grades.</li>
+                            <li>Sessions focus on long-term skill development, not quick fixes.</li>
+                            <li>Regular communication about where your child is and where they're headed.</li>
+                            <li>An investment in learning approaches that transfer to other subjects.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p><strong>In Practice</strong></p>
+                <p>This philosophy shapes everything from how we structure our sessions to how we approach challenging problems. Rather than simply providing answers, we work together to build understanding and develop the thinking skills that make students successful learners.</p>
+            </div>
+            <section class="cta-section">
+                <h2>Ready to Experience This Approach?</h2>
+                <p>See how this teaching philosophy can make a difference in your learning journey</p>
+                <a href="index.html#contact" class="cta-button">Schedule Your Free Consultation</a>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
