@@ -1,4 +1,12 @@
+@import "reset.css";
 @import "vars.css"; 
+
+@import "nav.css";
+@import "hero.css";
+@import "service_card.css";
+@import "cta.css";
+@import "contact.css";
+
 
 * {
     margin: 0;
@@ -14,99 +22,11 @@ body {
     min-height: 100vh;
 }
 
-
 .container {
-    max-width: 1200px;
+    width: 90%;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 1em 20px;
 }
-
-/* Header */
-header {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Mobile-first navigation */
-nav.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 20px;
-}
-
-.logo {
-    color: var(--color-primary);
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
-.logo h1 {
-    font-size: 1.8rem;
-    margin: 0;
-}
-
-.logo a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.menu-toggle {
-    display: block;
-    cursor: pointer;
-    color: var(--color-text);
-    font-size: 24px;
-    order: 2;
-}
-
-.nav-links {
-    display: none;
-    flex-direction: column;
-    position: fixed;
-    top: 70px;
-    left: 0;
-    right: 0;
-    background: rgba(255, 255, 255, 0.98);
-    padding: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 999;
-    list-style: none;
-    margin: 0;
-}
-
-.nav-links li {
-    margin-bottom: 1rem;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--color-text);
-    font-weight: 500;
-    font-size: 1.1rem;
-    padding: 0.5rem 0;
-    display: block;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: var(--color-navbar-hover);
-}
-
-/* Show the nav links when the checkbox is checked */
-#menu-toggle-checkbox:checked ~ .nav-links {
-    display: flex;
-}
-
-/* Hide the actual checkbox */
-#menu-toggle-checkbox {
-    display: none;
-}
-
 
 /* Main Content */
 main {
@@ -114,8 +34,9 @@ main {
     margin-top: 0;
 }
 
-.about-text p
-{
+
+p { 
+    font-size: 1.1rem; line-height: 1.8;
     margin-bottom: 1rem;
 }
 
@@ -129,101 +50,33 @@ section:nth-child(even) {
 
 h2 {
     font-size: var(--font-size-h2);
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     text-align: center;
     color: var(--color-primary);
 }
 
-/* Services */
-.services-grid {
+li {
+    margin-bottom: 24px;
+}
+
+
+/* Generic grid for two-column layouts (About, Contact, etc.) */
+.content-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 3rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
     margin-top: 3rem;
 }
 
-.service-card {
-    background: white;
-    padding: 2.5rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.content-grid.about {
+    align-items: center;
 }
 
-.service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
-
-.service-icon {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-}
-
-.service-card h3 {
-    font-size: var(--font-size-h3);
-    margin-bottom: 1rem;
-    color: var(--color-primary);
-}
-
-/* Hero Section */
-.hero {
-    background: linear-gradient(135deg, var(--color-primary), var(--color-hover)) !important;
-    padding: calc(var(--navbar-height) + 50px) 0 80px;
-    text-align: center;
-    color: white;
-    position: relative;
-}
-
-.hero h1 {
-    font-size: var(--font-size-h1);
-    margin-bottom: 1rem;
-    opacity: 0;
-    animation: fadeInUp 1s ease forwards;
-}
-
-.hero .subtitle {
-    font-size: 1.4rem;
-    margin-bottom: 2rem;
-    opacity: 0;
-    animation: fadeInUp 1s ease 0.3s forwards;
-}
-
-.hero .location {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    opacity: 0.9;
-    animation: fadeInUp 1s ease 0.6s forwards;
-}
-
-.cta-button {
-    display: inline-block;
-    background: var(--color-accent);
-    color: white;
-    padding: 15px 30px;
-    border-radius: var(--button-radius);
-    text-decoration: none;
-    font-weight: bold;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    opacity: 0;
-    animation: fadeInUp 1s ease 0.9s forwards;
-}
-
-.cta-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(234, 88, 12, 0.3);
+.content-grid.contact {
+    align-items: left;
 }
 
 /* About */
-.about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
-    margin-top: 3rem;
-}
-
 .about-text {
     font-size: 1.1rem;
     line-height: 1.8;
@@ -231,7 +84,7 @@ h2 {
 
 .skills-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 1rem;
     margin-top: 2rem;
 }
@@ -245,73 +98,17 @@ h2 {
     font-weight: 500;
 }
 
-/* Contact */
-.contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+
+
+/* general page */
+.page-content {
+    align-items: center;
     margin-top: 3rem;
 }
 
-.contact-info h3 {
-    margin-bottom: 1rem;
-    color: var(--color-primary);
-}
-
-.contact-info p {
-    margin-bottom: 0.5rem;
+.page-text {
     font-size: 1.1rem;
-}
-
-.contact-form {
-    background: white;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-    color: #333;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 1rem;
-    border: 2px solid var(--color-border);
-    border-radius: 8px;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--color-primary);
-}
-
-.submit-button {
-    width: 100%;
-    background: var(--color-primary);
-    color: white;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.submit-button:hover {
-    background: var(--color-hover);
+    line-height: 1.8;
 }
 
 /* Footer */
@@ -332,23 +129,6 @@ footer {
     to {
         opacity: 1;
         transform: translateY(0);
-    }
-}
-
-/* Responsive */
-@media (max-width: 1023px) {
-    .about-content,
-    .contact-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .skills-list {
-        grid-template-columns: 1fr;
-    }
-    
-    .hero h1 {
-        font-size: 2rem;
     }
 }
 
@@ -387,16 +167,30 @@ footer {
         font-size: 3.5rem;
     }
     
-    .about-content,
-    .contact-content {
+    .container {
+        max-width: 1100px;
+        padding: 20px;
+    }
+
+    .content-grid {
         grid-template-columns: 1fr 1fr;
         gap: 4rem;
     }
-    
+   
     .skills-list {
         grid-template-columns: repeat(2, 1fr);
     }
     
+    .skill-item {
+        background: var(--color-secondary);
+        color: white;
+        padding: 0.8rem 1.5rem;
+        border-radius: 25px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+
     section {
         padding: 80px 0;
     }
