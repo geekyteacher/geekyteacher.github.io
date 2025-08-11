@@ -106,11 +106,6 @@ li {
     margin-top: 3rem;
 }
 
-.page-text {
-    font-size: 1.1rem;
-    line-height: 1.8;
-}
-
 /* Footer */
 footer {
     background: var(--color-footer-bg);
