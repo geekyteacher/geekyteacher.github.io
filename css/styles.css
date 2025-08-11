@@ -31,7 +31,7 @@ body {
 
 /* Main Content */
 main {
-    background: rgb(255, 255, 255);
+    background: var(--color-bg);
     margin-top: 0;
 }
 
