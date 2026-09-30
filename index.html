@@ -1,161 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Geeky-teacher offers expert Computer Science tuition, school tech support, and digital infrastructure consulting for international students and schools. Based in Costa del Sol, Spain, available worldwide via remote learning.">
-    <link rel="canonical" href="https://geekyteacher.github.io/index.html">
-    <!-- OpenGraph Meta Tags -->
-    <meta property="og:title" content="Geeky-teacher - Computer Science Education Specialist">
-    <meta property="og:description" content="Expert Computer Science tuition, school tech support, and digital infrastructure consulting for international students and schools. Based in Costa del Sol, Spain, available worldwide via remote learning.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://geekyteacher.github.io/index.html">
-    <meta property="og:image" content="https://geekyteacher.github.io/assets/images/linkedin_comment.png">
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Geeky-teacher - Computer Science Education Specialist">
-    <meta name="twitter:description" content="Expert Computer Science tuition, school tech support, and digital infrastructure consulting for international students and schools. Based in Costa del Sol, Spain, available worldwide via remote learning.">
-    <meta name="twitter:image" content="https://geekyteacher.github.io/assets/images/linkedin_comment.png">
-    <title>Geeky-teacher - Computer Science Education Specialist</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Geeky Teacher</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+            --muted: #94a3b8;
+            --accent: #38bdf8;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background: var(--card-bg);
+            border: 1px solid #334155;
+            border-radius: 16px;
+            padding: 40px 30px;
+            max-width: 440px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            margin-top: 0;
+            margin-bottom: 12px;
+            color: var(--accent);
+        }
+
+        p {
+            color: var(--muted);
+            font-size: 1.05rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-    <header>
-    <nav class="container" role="navigation" aria-label="Main Navigation">
-            <div class="logo">
-                <h1><a href="index.html">Geeky-teacher</a></h1>
-            </div>
-            
-            <input type="checkbox" id="menu-toggle-checkbox">
-            <label for="menu-toggle-checkbox" class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </label>
-            
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="teaching-philosophy.html">Teaching Approach</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <h1>Computer Science Education Specialist</h1>
-            <p class="subtitle">Experienced educator bringing British curriculum expertise to international students</p>
-            <p class="location">📍 Costa del Sol, Spain | 🌐 Available worldwide via remote learning</p>
-            <a href="#contact" class="cta-button">Enquire Today</a>
-        </div>
-    </section>
+    <div class="container">
+        <h1>Geeky Teacher</h1>
+        <p>Looking for the class pages?<br>Ask your teacher, Mr F!</p>
+    </div>
 
-    <main>
-        <section id="services">
-            <div class="container">
-                <h2>Services</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon">🎓</div>
-                        <h3>Private Tuition</h3>
-                        <p>Personalised GCSE, IGCSE, and A-Level Computer Science tuition. Available online worldwide or in-person on the Costa del Sol.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">🏫</div>
-                        <h3>School Tech Support</h3>
-                        <p>Curriculum development, teacher training, and enrichment programmes for international schools. Specialising in project-based learning approaches.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">⚙️</div>
-                        <h3>Digital Infrastructure Support</h3>
-                        <p>Network troubleshooting, digital infrastructure consulting, and technology systems support for international schools. From WiFi optimisation to smart classroom setups.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about">
-            <div class="container">
-                <h2>About Geeky-teacher</h2>
-                <div class="content-grid about">
-                    <div class="about-text">
-                        <p>Hi! I'm Simon, and I've spent over 14 years teaching Computer Science to a diverse range of students. I've had the privilege of teaching in various communities in the UK, supporting students with SEND (especially SEMH and ASC), and working with A-Level students in China. My journey has also included teaching at international schools here in Spain.</p>
-
-                        <p>This experience has taught me that every student can succeed with the right approach. Whether you're struggling with basic concepts, have specific learning needs, or are aiming for top grades, I adapt my teaching style to match how you learn best.</p>
-
-                        <p>I believe in practical, project-based learning that goes beyond memorising syntax. My students build real projects - games, websites, apps - while mastering the programming concepts they need for their exams. Whether it's Python fundamentals for GCSE or tackling A-Level coursework across different exam boards (AQA, OCR, Edexcel, CAIE), we'll work together to make computing click.</p>
-
-                        <p>Currently based on the Costa del Sol, I offer both online tutoring worldwide and face-to-face sessions locally.</p>
-                    </div>
-                    <div class="skills-list">
-                        <div class="skill-item">British Curriculum Expert</div>
-                        <div class="skill-item">GCSE/IGCSE Specialist</div>
-                        <div class="skill-item">A-Level Computing</div>
-                        <div class="skill-item">Python Programming</div>
-                        <div class="skill-item">Web Development</div>
-                        <div class="skill-item">Database Design</div>
-                        <div class="skill-item">Project-Based Learning</div>
-                        <div class="skill-item">Remote Teaching</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <div class="container">
-                <h2>Get In Touch</h2>
-                <div class="content-grid">
-                    <div class="contact-info">
-                        <h3>Ready to get started?</h3>
-                        <!-- <p>📧 Email: ---</p> -->
-                        <p>📍 Location: Costa del Sol, Spain</p>
-                        <p>🌐 Remote sessions available worldwide</p>
-                        <p>⏰ Flexible scheduling to suit your timezone</p>
-                        
-                        <h3 style="margin-top: 2rem;">Services Offered</h3>
-                        <p>✅ Free initial consultation</p>
-                        <p>✅ Customised learning plans</p>
-                        <p>✅ Exam preparation and revision</p>
-                        <p>✅ Project portfolio creation</p>
-                        <p>✅ University application guidance</p>
-                    </div>
-                    <form class="contact-form" action="https://formspree.io/f/xldlapnd" method="POST" aria-label="Contact Form">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="service">Service Interest</label>
-                            <select id="service" name="service">
-                                <option value="tutoring">Private Tutoring</option>
-                                <option value="school">School Support</option>
-                                <option value="web">Web Development</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Tell me about your learning goals or project needs..."></textarea>
-                        </div>
-                        <button type="submit" class="submit-button">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Geeky-teacher. Helping students succeed in the digital world.</p>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
-        
 </body>
 </html>
